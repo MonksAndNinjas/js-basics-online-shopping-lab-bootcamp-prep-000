@@ -17,9 +17,6 @@ function addToCart(item) {
  return `${item} has been added to your cart.`
 }
 
-//array.push(" " + (i + 1) + ". " + katzDeliLine[i])
-    }
-
 function viewCart() {
   // write your code here
   if ( cart.length === 0 ) {
@@ -29,7 +26,7 @@ function viewCart() {
   } else if (cart.length === 2) {
     return `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}, and ${cart[1].itemName} at $${cart[1].itemPrice}.`
   } else {
-    for ( var = 0; i < cart.length -1; i++) {
+    for ( var i = 0; i < cart.length -1; i++) {
     array = []
     array.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
     }
